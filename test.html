@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <script type="text/javascript" src="../Editor/Editor.js"></script>
+    <script>
+        window.onload = function () {
+            setEditor("testeditor", "<span>a<span>b<span>ddd</span><span>e</span></span><span>cc<span>f</span><span>g</span></span></span>");
+            //setEditor("testeditor");
+        };
+
+        var saveEditor = function () {
+            //console.log(editors["testeditor"].save());
+            editors["testeditor"].save();
+        };
+    </script>
+</HEAD>
+<BODY>
+    <!--<input type="button" value="saveEditor" onclick="javascript:saveEditor();" />-->    
+    <div id="testeditor" style="width:600px; height:500px;"></div>
+</BODY>
+</HTML>
